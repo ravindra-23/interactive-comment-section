@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --ff-body: 'Rubik', sans-serif;
+
+    --clr-mblue: hsl(238, 40%, 52%);
+    --clr-soft-red: hsl(358, 79%, 66%);
+    --clr-lgray-blue: hsl(239, 57%, 85%);
+    --clr-pale-red: hsl(357, 100%, 86%);
+
+    --clr-dblue: hsl(212, 24%, 26%);
+    --clr-gray-blue: hsl(211, 10%, 45%);
+    --clr-light-gray: hsl(223, 19%, 93%);
+    --clr-vl-gray: hsl(228, 33%, 97%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --fs-body: 16px;
+}
+
+html, body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+}
+
+/* -------------*/
+/*     RESET    */
+/* ------------- */
+
+/* Box-sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* Make images to work easier with */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and Buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for those who turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
